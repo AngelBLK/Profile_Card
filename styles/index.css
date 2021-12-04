@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+  --white: #fff;
+  --sm: 14px;
+  --md: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--Dark-cyan);
+  overflow: hidden;
+}
+
+.container {
+  width: 90%;
+  max-width: 350px;
+  height: 350px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 15px;
+  z-index: 9;
+}
+
+.img-bg {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.img-victor {
+  border-radius: 50%;
+  border: 5px solid var(--white);
+  position: absolute;
+  top: 80px;
+  right: calc(100% - 175);
+}
+
+.title {
+  font-size: var(--md);
+  font-weight: 700;
+  color: var(--Very-dark-desaturated-blue);
+  margin-top: 50px;
+}
+
+span {
+  font-weight: 400;
+  color: var(--Dark-gray);
+}
+
+.paragraph {
+  font-size: var(--sm);
+  font-weight: 400;
+  color: var(--Dark-gray);
+  margin-top: -5px;
+  margin-bottom: 25px;
+}
+
+.stats {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+  border-top: 1px solid var(--Dark-gray);
+}
+
+.numbers {
+  font-size: var(--md);
+  font-weight: 700;
+  color: var(--Very-dark-desaturated-blue);
+  text-align: center;
+  margin-bottom:3px;
+}
+
+.info {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--Dark-gray);
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.circle {
+  position: absolute;
+}
+
+.top {
+  top: -550px;
+  left: -800px;
+}
+
+.bottom {
+  bottom: -450px;
+  right: -750px;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  color: var(--white);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1440px) {
+  .top {
+    top: -450px;
+    left: -400px;
+  }
+  
+  .bottom {
+    bottom: -550px;
+    right: -300px;
+  }
+}
