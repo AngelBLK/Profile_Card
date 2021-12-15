@@ -103,16 +103,6 @@ span {
   position: absolute;
 }
 
-.top {
-  top: -550px;
-  left: -800px;
-}
-
-.bottom {
-  bottom: -450px;
-  right: -750px;
-}
-
 .attribution {
   font-size: 12px;
   text-align: center;
@@ -120,16 +110,4 @@ span {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-
-@media screen and (max-width: 1440px) {
-  .top {
-    top: -450px;
-    left: -400px;
-  }
-  
-  .bottom {
-    bottom: -550px;
-    right: -300px;
-  }
 }
